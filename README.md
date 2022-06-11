@@ -55,7 +55,7 @@ Retorna:
 {"valorDaCompra":"100","valorTroco":100,"notas":{"notasDeCem":1}}
 ```
 
-<p><strong>"/cep"</strong> => Essa rota retorna os dados dos ceps informados, os ceps devem ser informados como no exemplo abaixo, a função vai percorrer os ceps informados fazendo a consulta na api (https://viacep.com.br/) e armazenando os seus dados para no fim do processo informar todos os ceps com seus dados de uma única vez, os dados devem ser informados no formato JSON, o método utilizado é o POST.</p>
+<p><strong>"/CEP"</strong> => Essa rota retorna os dados dos cep's informados, os cep's devem ser informados como no exemplo abaixo, a função vai percorrer os cep's informados fazendo a consulta na api (https://viacep.com.br/) e armazenando os seus dados para no fim do processo informar todos os cep's com seus dados de uma única vez, os dados devem ser informados no formato JSON, o método utilizado é o POST.</p>
 
 Exemplo: 
 ```json
