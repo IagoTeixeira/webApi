@@ -21,7 +21,7 @@ module.exports = (app) =>{
             .catch(erro => res.status(404).json(erro))
     })
 
-    app.post("/cep", (req, res) =>{
+    app.post("/CEP", (req, res) =>{
         const dados = req.body
         models.cep(dados)
             .then(element => res.json(element))
