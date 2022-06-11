@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outDir": "./repositorio",
+        "target": "ESNext",
+        "noEmitOnError": true,
+        "noImplicitAny": true
+    },
+    "include": ["modelTs/**/*"]
+}
