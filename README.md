@@ -1,6 +1,6 @@
 <h1 align="center"> Web Api </h1>
 
-<p>Essa api tem como funcionalidades a de encontrar um palindromo, menor valor de notas devolvido de um caixa com notas de 1,10 e 100, cria um objeto através de uma regra de interface em Typescript e de trazer dados da quantidade de ceps informados</p>
+<p>Essa api tem como funcionalidade a de encontrar um palindromo, menor valor de notas devolvido de um caixa com notas de 1,10 e 100, criar um objeto através de uma regra de interface em Typescript e de trazer dados da quantidade de ceps informados</p>
 
 <h2>Dependências utilizadas</h2>
 
@@ -14,7 +14,7 @@
   
 <strong>Axios:</strong> Para consumir a api de ceps.
 
-<strong>Nodemon:</strong> Para que reiniciar o servidor sempre que houver alguma atualização.
+<strong>Nodemon:</strong> Para reiniciar o servidor sempre que houver alguma atualização.
 
 Para que sejam instaladas todas as dependências, basta dar o comando:
   
@@ -33,9 +33,9 @@ Para que sejam instaladas todas as dependências, basta dar o comando:
 
 <h2>Rotas</h2>
 
-<p><strong>"/" => Essa rota é apensa uma rota de boas vinda simples</p>
+<p><strong>"/" => Essa rota é apenas uma rota de boas vinda simples</p>
 
-<p><strong>"/polindrome/:start/:end"</strong> => Essa rota retorna os números palíndromos entre um intervalo da sua escolha, nessa rota deve ser passado os parâmetros que deseja na própria url, sendo o parâmetro start como o ínicio do intervalo e o parâmetro end como o fim do intervalo, a função irá percorrer entre os números sugeridos encontrado os polímetros, o método utilizado é o GET.</p>
+<p><strong>"/polindrome/:start/:end"</strong> => Essa rota retorna os números palíndromos entre um intervalo da sua escolha, nessa rota deve ser passado os parâmetros que deseja na própria url, sendo o parâmetro start como o ínicio do intervalo e o parâmetro end como o fim do intervalo, a função irá percorrer entre os pontos de inicio e fim informados encontrando os palíndromos, o método utilizado é o GET.</p>
 
 Exemplo: 
 `polindrome/1/48`
@@ -55,7 +55,7 @@ Retorna:
 {"valorDaCompra":"100","valorTroco":100,"notas":{"notasDeCem":1}}
 ```
 
-<p><strong>"/cep"</strong> => Essa rota retorna os dados dos ceps informados, os ceps deve ser informados como no exemplo abaixo, a função vai percorrer os ceps informados fazendo a consulta e armazenando os seus dados para no fim do processo informar todos os ceps com seus dados de uma única vez, os dados devem ser informados no formato JSON, o método utilizado é o POST.</p>
+<p><strong>"/cep"</strong> => Essa rota retorna os dados dos ceps informados, os ceps devem ser informados como no exemplo abaixo, a função vai percorrer os ceps informados fazendo a consulta na api (https://viacep.com.br/) e armazenando os seus dados para no fim do processo informar todos os ceps com seus dados de uma única vez, os dados devem ser informados no formato JSON, o método utilizado é o POST.</p>
 
 Exemplo: 
 ```json
@@ -131,7 +131,7 @@ Retorna
 ]
 ```
 
-<p><strong>"/carro"</strong> => Essa rota retorna o objeto criado com os dados informado, o mesmo é salvo em um arquivo JSON, localizado na pasta /dbJson, salva apenas um modelo de cada vez, é necessário informar os dados no formato json, o dado de quantidade de portas deve ser um NUMBER, o método utilizado é o POST.</p>
+<p><strong>"/carro"</strong> => Essa rota retorna o objeto criado com os dados informado, o mesmo é salvo em um arquivo JSON, localizado na pasta /dbJson, salva apenas um modelo, é necessário informar os dados no formato json, o dado de quantidade de portas deve ser um NUMBER entre 2 e 4, o método utilizado é o POST.</p>
 
 Exemplo: 
 ```json
@@ -154,7 +154,7 @@ Retorna
 }
 ```
 
-<p><strong>"/moto"</strong> => Essa rota retorna o objeto criado com os dados informado, o mesmo é salvo em um arquivo JSON, localizado na pasta /dbJson, salva apenas um modelo de cada vez, é necessário informar os dados no formato json, os dados de passageiro e rodas deve ser um NUMBER, o método utilizado é o POST.</p>
+<p><strong>"/moto"</strong> => Essa rota retorna o objeto criado com os dados informado, o mesmo é salvo em um arquivo JSON, localizado na pasta /dbJson, salva apenas um modelo de cada vez, é necessário informar os dados no formato json, os dados de passageiro (entre 1 e 2) e rodas(sempre deve ser 2) deve ser um NUMBER, o método utilizado é o POST.</p>
 
 Exemplo: 
 ```json
@@ -179,5 +179,4 @@ Retorna
 
 }
 ```
-
 
